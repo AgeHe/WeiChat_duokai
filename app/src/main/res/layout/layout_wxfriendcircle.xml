@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_bg">
+
+
+    <LinearLayout
+        android:id="@+id/wx_friendcircle_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_title"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/wx_friendcircle_title_iv"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/abc_ic_ab_back_mtrl_am_alpha"
+            android:paddingLeft="10dp"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/viewbg"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wxpyq"
+            android:textSize="18sp"
+            android:textColor="@color/color_white"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/wx_friendcircle_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/wx_friendcircle_title_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wxpyq_szzl"
+            android:textColor="@color/color_txtblack"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+        <ImageView
+            android:id="@+id/wx_friendcircle_info_iv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/role_000"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"/>
+        <TextView
+            android:id="@+id/wx_friendcircle_info_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/wxql_qxz"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/wx_friendcircle_info_iv"
+            android:textColor="@color/txtash"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/wx_friendcircle_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/color_white"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/wx_friendcircle_btn_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/wxpyq_add"
+            android:textSize="15sp"
+            android:textColor="@color/color_white"
+            android:background="@drawable/blue_shape"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"/>
+        <TextView
+            android:id="@+id/wx_friendcircle_btn_preview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/wxpyq_preview"
+            android:textSize="15sp"
+            android:textColor="@color/color_white"
+            android:background="@drawable/green_shape"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/wx_friendcircle_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@id/wx_friendcircle_info_layout"
+        android:layout_above="@id/wx_friendcircle_btn_layout"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

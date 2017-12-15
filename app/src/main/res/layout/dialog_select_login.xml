@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_login_bg"
+    android:layout_margin="10dp">
+    <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/shape_dialog_login_bg"-->
+        <!--android:layout_margin="10dp">-->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="@drawable/shape_dialog_login_title"
+            android:gravity="center"
+            android:text="登录"
+            android:textSize="@dimen/text_huge"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/tv_login_close"
+            android:layout_width="?android:actionBarSize"
+            android:layout_height="?android:actionBarSize"
+            android:layout_alignParentRight="true"
+            android:scaleType="center"
+            android:src="@mipmap/wechat_close"
+            android:background="?android:selectableItemBackground"/>
+
+
+        <TextView
+            android:id="@+id/tv_wx_loginbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_title"
+            android:textSize="@dimen/text_large"
+            android:textColor="#333333"
+            android:drawableTop="@mipmap/icon_share_wx"
+            android:text="微信登录"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:drawablePadding="10dp"/>
+
+    <!--</RelativeLayout>-->
+</RelativeLayout>

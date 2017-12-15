@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible">
+    <!--android:layout_margin="15dp"-->
+    <TextView
+        android:id="@+id/tv_tab_weichat"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textSize="@dimen/text_mid"
+        android:textColor="@color/text_white"
+        android:background="@drawable/main_make_tab_select_left"
+        android:text="微信分身"/>
+
+    <TextView
+        android:id="@+id/tv_tab_qq"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textSize="@dimen/text_mid"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/main_make_tab_select_right"
+        android:text="QQ分身"
+        />
+</LinearLayout>

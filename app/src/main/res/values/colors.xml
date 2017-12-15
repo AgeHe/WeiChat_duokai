@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6881FD</color>
+    <color name="colorPrimaryDark">#6881FD</color>
+    <color name="colorAccent">#6881FD</color>
+    <color name="windowBackground">#f5f5f5</color>
+    <color name="textColorPrimary">#333333</color>
+
+    <color name="textcolor">#11b978</color>
+
+    <color name="ws_dianzan">#a3a3a3</color>
+
+    <color name="red_packets_color1">#17C681</color>
+    <color name="red_packets_color2">#12B7AF</color>
+
+    <color name="red_packets_color_scroll_text">#FFEF82</color>
+    <color name="red_packets_baccolor_scroll_text">#29D894</color>
+    <color name="red_packets_status_text">#4DFFD2</color>
+    <color name="red_packets_function_text">#727272</color>
+
+    <color name="theme_item_selector">#d3ffee</color>
+
+    <color name="theme_bac">#f5f5f5</color>
+    <color name="theme_bac2">#e6e6e6</color>
+    <color name="theme_red">#f53d56</color>
+    <color name="theme_red2">#fe2d00</color>
+    <color name="color_mfcj_red">#ff0018</color>
+    <color name="themt_bacd9">#d9d9d9</color>
+    <color name="bg_f2f2f2">#f2f2f2</color>
+    <color name="bg_fafafa">#fafafa</color>
+    <color name="theme_white">#ffffff</color>
+
+    <color name="line_dark">#d9d9d9</color>
+    <color name="line_white">#ffffff</color>
+    <color name="line_D9D9D9">#D9D9D9</color>
+    <color name="line_newui_dedede">#dedede</color>
+
+    <color name="text_white">#ffffff</color>
+    <color name="text_color">#333333</color>
+    <color name="text_dark">#808080</color>
+    <color name="btn_oval_bk">#bfbfbf</color>
+    <color name="text_dark_grey">#4c4c4c</color>
+    <color name="text_black">#2a2a2a</color>
+
+    <color name="preview_bac_color">#5af83030</color>
+    <!--透明色-->
+    <color name="transparent_color">#00ffffff</color>
+    <color name="holo_blue_dark">#0099cc</color>
+    <color name="holo_yellow_dark">#ff8800</color>
+    <color name="holo_green_dark">#669900</color>
+    <color name="holo_purple_dark">#9933cc</color>
+    <color name="holo_red_dark">#cc0000</color>
+    <integer-array name="progress_colors">
+        <item>@color/holo_blue_dark</item>
+        <item>@color/holo_yellow_dark</item>
+        <item>@color/holo_green_dark</item>
+        <item>@color/holo_purple_dark</item>
+        <item>@color/holo_red_dark</item>
+    </integer-array>
+    <color name="share_url_blue">#2d5ade</color>
+
+    <!--微商截图功能-->
+    <color name="titlebg">#17c782</color>
+    <color name="txtblack">#000000</color>
+    <color name="txtash">#c9c9c9</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#10b8f2</color>
+
+
+    <!-- 自定义Dialog的背景颜色 -->
+    <color name="dialog_bg">#ffe74c3c</color>
+    <!-- 自定义Dialog的字体的颜色 -->
+    <!--<color name="text_color">#FFFFFF</color>-->
+    <!-- 自定义Dialog的标题同内容部分的分割线 -->
+    <color name="divider_color">#11000000</color>
+    <!-- 自定义Dialog信息部分文字的颜色 -->
+    <color name="msg_color">#FFFFFFFF</color>
+    <!-- 自定义Dialog中button点击时的颜色 -->
+    <color name="btn_press_color">#FFa5281b</color>
+    <!-- 自定义Dialog中button未点击时的颜色 -->
+    <color name="btn_unpress_color">#FFc0392b</color>
+    <!-- 黑色字体颜色 -->
+    <color name="textcolor_black">#000000</color>
+    <!-- 浅灰色字体颜色 -->
+    <color name="textcolor_light_grey">#807e7a</color>
+    <!-- 红色字体颜色 -->
+    <color name="textcolor_red">#e30000</color>
+    <!-- 红色字体颜色 -->
+    <color name="textcolor_green">#22ad38</color>
+    <!-- 非保险橘黄色字体颜色 -->
+    <color name="not_surance_yellow">#ffbb38</color>
+    <!-- 保险蓝色字体颜色 -->
+    <color name="surance_blue">#3598da</color>
+    <!-- 浅蓝色字体颜色 -->
+    <color name="light_blue">#E5F2FD</color>
+    <!-- 默认背景颜色，灰白 -->
+    <color name="base_bg">#FBFBFB</color>
+    <!-- 首页上方边框的颜色，深灰 -->
+    <color name="home_border_dark_gray">#E1E1E1</color>
+    <!-- 首页上方三个环形进度条布局的背景颜色，浅灰 -->
+    <color name="home_bg_light_gray">#F5F5F5</color>
+    <!-- 首页上方三个环形进度条文字的颜色，浅黑 -->
+    <color name="home_text_light_black">#333333</color>
+    <!-- 首页上方左侧个人信息代用名文字的颜色，略深黑 -->
+    <color name="home_text_little_dark_black">#323232</color>
+    <!-- 首页上方环形进度条的颜色，蓝色 -->
+    <color name="home_round_progress_bar_blue">#ff3896F3</color>
+    <!-- 首页上方环形进度条的默认颜色，灰色 -->
+    <color name="home_round_progress_bar_default_gray">#D1D1D1</color>
+    <color name="dialog_pressed_bg_color">#919191</color>
+    <!-- dialog条目默认的显示的背景 -->
+    <color name="dialog_unpressed_bg_color">#FFFFFF</color>
+    <!-- dialog背景半透明 -->
+    <color name="black_more_half">#55111111</color>
+    <!-- dialog的ok按钮未选择的颜色 -->
+    <color name="tip_dialog_ok_btn_ina_color">#a39b93</color>
+    <!-- dialog的ok按钮选择的颜色 -->
+    <color name="tip_dialog_ok_btn_a_color">#f5f5f5</color>
+    <!-- layoutRipple 的波纹色 淡蓝色 -->
+    <color name="layoutRipple_color">#1E88E5</color>
+    <!-- layoutRipple 的波纹色 淡蓝色 -->
+    <color name="left_item_color">#0000ee</color>
+    <color name="corner_border_color">#F3F4F3</color>
+
+    <color name="color_title">#393A3F</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_black">#000000</color>
+    <color name="color_txtash">#7E7E7E</color>
+    <color name="color_txtblack">#333333</color>
+    <color name="color_bg">#F5F5F9</color>
+    <color name="color_green">#33CC33</color>
+    <color name="ashbg">#ebebeb</color>
+    <color name="red">#c83332</color>
+    <color name="viewbg">#1a1a1a</color>
+    <color name="photopicker_background">#181819</color>
+    <color name="yellow">#dcd69d</color>
+    <color name="wxblue">#6b7d9c</color>
+    <color name="txt_6">#666666</color>
+    <color name="txt8">#888888</color>
+    <color name="zfbstatus">#b0b0b0</color>
+    <color name="zfbblue">#4c92e7</color>
+    <color name="btm">#e0000000</color>
+    <color name="wxpyqcommit">#666a8f</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="black_20_transparent">#55000000</color>
+
+    <color name="cp_text_1">#758cff</color>
+    <color name="cp_text_2">#969696</color>
+    <color name="register_line_1">#c8d1fe</color>
+</resources>

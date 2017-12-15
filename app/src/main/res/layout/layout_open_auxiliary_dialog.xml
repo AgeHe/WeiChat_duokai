@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_bg_fillet"
+    android:gravity="center">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_large"
+            android:textStyle="bold"
+            android:paddingTop="@dimen/layout_normal"
+            android:paddingBottom="@dimen/layout_normal"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textColorPrimary"
+            android:text="请打开辅助服务"/>
+
+        <ImageView
+            android:id="@+id/iv_exit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@mipmap/dialog_close"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/windowBackground"/>
+
+    <TextView
+        android:id="@+id/tv_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_huge"
+        android:textSize="@dimen/text_mid"
+        android:textColor="@color/theme_red2"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_normal"
+        android:textSize="@dimen/text_mid"
+        android:textColor="@color/text_dark"
+        android:text="点击后打开>确定>返回应用"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/layout_huge"
+        android:background="@color/line_dark"/>
+
+    <Button
+        android:id="@+id/tv_open_auxiliary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_normal"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold"
+        android:textColor="@color/text_white"
+        android:text="去设置"
+        android:gravity="center"
+        android:background="@drawable/shape_button_bac"/>
+
+</LinearLayout>

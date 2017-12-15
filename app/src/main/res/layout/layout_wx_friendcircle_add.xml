@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_bg">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_title">
+
+        <ImageView
+            android:id="@+id/wx_friendcircle_add_title_iv"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/abc_ic_ab_back_mtrl_am_alpha"
+            android:paddingLeft="10dp"/>
+
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/viewbg"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/wx_friendcircle_add_title_iv"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑内容"
+            android:textColor="@color/color_white"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/wx_friendcircle_add_title_iv"
+            android:layout_marginLeft="25dp"/>
+
+        <Button
+            android:id="@+id/wx_friendcircle_add_title_btn"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/green_shape"
+            android:text="确定"
+            android:textColor="@color/color_white"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wx_friendcircle_add_role_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送人"
+            android:textColor="@color/color_txtblack"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+
+        <ImageView
+            android:id="@+id/wx_friendcircle_add_role_iv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/role_000"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"/>
+
+        <TextView
+            android:id="@+id/wx_friendcircle_add_role_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txtash"
+            android:textSize="15sp"
+            android:text="名字"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/wx_friendcircle_add_role_iv"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/wx_friendcircle_add_context_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:hint="消息内容"/>
+    <com.zhushou.weichat.screenshot.view.NewGridView
+        android:id="@+id/wx_friendcircle_add_image_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="5"
+        android:scrollbars="none"
+        android:background="@color/color_white"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:padding="10dp"/>
+    <RelativeLayout
+        android:id="@+id/wx_friendcircle_add_time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布时间"
+            android:textColor="@color/color_txtblack"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/wx_friendcircle_add_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:text="2分钟前"
+            android:textColor="@color/txtash"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/ashbg"
+        android:layout_marginLeft="10dp"/>
+    <RelativeLayout
+        android:id="@+id/wx_friendcircle_add_location_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所在位置(选填)"
+            android:textColor="@color/color_txtblack"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/wx_friendcircle_add_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:text="未填写"
+            android:textColor="@color/txtash"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

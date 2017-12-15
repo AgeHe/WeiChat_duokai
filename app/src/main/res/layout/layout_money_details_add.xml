@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_bg">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/color_title">
+
+        <ImageView
+            android:id="@+id/money_details_add_title_iv"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/abc_ic_ab_back_mtrl_am_alpha"
+            android:paddingLeft="10dp"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#1a1a1a"
+            android:layout_toRightOf="@id/money_details_add_title_iv"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tjmx"
+            android:textColor="@color/color_white"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/money_details_add_title_iv"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:id="@+id/money_details_add_sure_btn"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@drawable/green_shape"
+            android:text="@string/tjmx_sure"
+            android:textColor="@color/color_white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textSize="13sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_white"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tjmx_szlx"
+            android:textSize="15sp"
+            android:textColor="@color/color_txtblack"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/money_details_add_disburse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tjmx_szlx_zc"
+            android:textSize="13sp"
+            android:textColor="@color/wxblue"
+            android:background="@drawable/white_shape"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/money_details_add_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tjmx_szlx_sr"
+            android:textSize="13sp"
+            android:textColor="@color/color_white"
+            android:background="@drawable/blue_shape"
+            android:layout_centerVertical="true"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_toLeftOf="@id/money_details_add_disburse"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/ashbg"
+        android:layout_marginLeft="10dp"/>
+    <RelativeLayout
+        android:id="@+id/money_details_add_time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tjmx_szlx_jysj"
+            android:textSize="15sp"
+            android:textColor="@color/color_txtblack"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/money_details_add_right"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/money_details_add_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/color_txtash"
+            android:layout_toLeftOf="@id/money_details_add_right"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/ashbg"
+        android:layout_marginLeft="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_white">
+
+        <ImageView
+            android:id="@+id/money_details_add_random"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/ic_random"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/money_details_add_des_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/money_details_add_random"
+            android:layout_marginLeft="10dp"
+            android:background="@color/color_white"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/ashbg"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_white"
+        android:hint="@string/tjmx_szlx_money_hint"
+        android:paddingLeft="10dp"
+        android:id="@+id/money_details_add_money_et"
+        android:inputType="number|numberDecimal"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/ashbg"/>
+
+</LinearLayout>

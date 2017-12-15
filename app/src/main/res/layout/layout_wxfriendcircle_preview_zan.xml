@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_bg">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_title">
+
+        <ImageView
+            android:id="@+id/wxfriendcircle_preview_zan_title_iv"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/abc_ic_ab_back_mtrl_am_alpha"
+            android:paddingLeft="10dp"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/viewbg"
+            android:layout_toRightOf="@id/wxfriendcircle_preview_zan_title_iv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dianzan"
+            android:textColor="@color/color_white"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/wxfriendcircle_preview_zan_title_iv"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/wxfriendcircle_preview_zan_title_btn"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/green_shape"
+            android:text="@string/dianzan_sure"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:textSize="13sp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/wxfriendcircle_preview_zan_et"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/color_white"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:hint="@string/dianzan_context_hint"
+        android:textSize="15sp"
+        android:gravity="start"
+        android:paddingTop="10dp"/>
+
+
+    <Button
+        android:id="@+id/wxfriendcircle_preview_zan_random"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_shape"
+        android:text="@string/dianzan_random"
+        android:textColor="@color/color_white"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+</LinearLayout>

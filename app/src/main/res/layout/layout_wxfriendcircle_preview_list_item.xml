@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/wxfriendcircle_preview_list_item_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/role_000"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="12dp">
+
+            <TextView
+                android:id="@+id/wxfriendcircle_preview_list_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxxxxxx"
+                android:textColor="@color/wxblue"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/wxfriendcircle_preview_list_context_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_txtblack"
+                android:textSize="15sp"
+                android:text="123456"
+                android:layout_marginTop="2dp"/>
+
+            <com.zhushou.weichat.screenshot.view.NewGridView
+                android:id="@+id/wxfriendcircle_preview_list_item_gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:numColumns="3"
+                android:horizontalSpacing="3dp"
+                android:verticalSpacing="3dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="13dp"/>
+
+            <TextView
+                android:id="@+id/wxfriendcircle_preview_list_location_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="1111111111"
+                android:textColor="@color/wxblue"
+                android:textSize="13sp"
+                android:layout_marginTop="10dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/wxfriendcircle_preview_list_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="xxxxx"
+                    android:textSize="13sp"
+                    android:textColor="@color/color_txtash"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wxpyq_clear"
+                    android:textSize="13sp"
+                    android:textColor="@color/wxblue"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/wxfriendcircle_preview_list_time_tv"/>
+
+                <ImageView
+                    android:id="@+id/wxfriendcircle_preview_list_commit_iv"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/comment"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/zan_commit_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/commitb"
+                android:layout_marginRight="10dp"
+                android:visibility="visible">
+                <ImageView
+                    android:id="@+id/zan_image"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:src="@mipmap/dianzan"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginLeft="5dp"/>
+                <TextView
+                    android:id="@+id/wxriendcircle_preview_item_zan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/wxblue"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="6dp"/>
+                <View
+                    android:id="@+id/mm"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#d4d4d4"
+                    android:layout_below="@id/wxriendcircle_preview_item_zan"
+                    android:layout_marginTop="2dp"/>
+
+                <com.zhushou.weichat.screenshot.view.Newlistview
+                    android:id="@+id/wxriendcircle_preview_item_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:layout_below="@id/mm"
+                    android:dividerHeight="0dp"
+                    android:layout_marginTop="2dp"></com.zhushou.weichat.screenshot.view.Newlistview>
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

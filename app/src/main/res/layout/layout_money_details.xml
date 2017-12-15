@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_bg">
+
+    <LinearLayout
+        android:id="@+id/money_details_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/color_title">
+        <ImageView
+            android:id="@+id/money_details_title_iv"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/abc_ic_ab_back_mtrl_am_alpha"
+            android:paddingLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lqmx"
+            android:textSize="18sp"
+            android:textColor="@color/color_white"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/money_details_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_white"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/money_details_btn_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/blue_shape"
+            android:text="@string/lqmx_add"
+            android:textSize="15sp"
+            android:textColor="@color/color_white"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/money_details_btn_preview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/green_shape"
+            android:text="@string/lqmx_preview"
+            android:textSize="15sp"
+            android:textColor="@color/color_white"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/money_details_sample_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@id/money_details_title_layout">
+
+        <TextView
+            android:id="@+id/money_details_sample_context_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lqmx_qqhy"
+            android:textColor="@color/color_txtblack"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lqmx_sample_time"
+            android:textColor="@color/color_txtblack"
+            android:textSize="13sp"
+            android:layout_below="@id/money_details_sample_context_tv"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lqmx_money"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/color_green"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/monet_details_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:scrollbars="none"
+        android:layout_marginTop="10dp"
+        android:layout_above="@id/money_details_btn_layout"
+        android:layout_below="@id/money_details_sample_layout"></ListView>
+
+</RelativeLayout>

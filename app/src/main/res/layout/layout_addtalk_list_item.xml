@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/addtalk_list_item_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/add_talk_list_item_clear"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/clear"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/addtalk_list_item_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11111111111"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/addtalk_list_item_icon"
+            android:layout_toLeftOf="@id/add_talk_list_item_clear"
+            android:layout_marginLeft="15dp"
+            android:lines="1"
+            android:textSize="14sp"
+            android:textColor="#696969"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bac2">
+    <FrameLayout
+        android:id="@+id/m_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/colorAccent"
+        android:elevation="3dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_large"
+            android:text="常见问题"
+            />
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:scaleType="center"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/icon_back"
+            android:onClick="onClick"
+            />
+    </FrameLayout>
+
+
+    
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcv_problem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ashbg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/color_title">
+
+        <ImageView
+            android:id="@+id/role_edit_title_iv"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/abc_ic_ab_back_mtrl_am_alpha"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/xgjs"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/role_edit_title_iv"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/role_edit_sure_tv"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="@string/xgjs_sure"
+            android:textColor="#ffffff"
+            android:background="@drawable/green_shape"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/color_white"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/add_role_edit_icon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xgjs_jstx"
+                android:textColor="@color/color_txtblack"
+                android:textSize="13sp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/add_role_edit_icon_iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/ic_launcher"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ashbg"
+            android:layout_marginLeft="10dp"/>
+        <RelativeLayout
+            android:id="@+id/role_edit_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xgjs_jsnc"
+                android:textColor="@color/color_txtblack"
+                android:textSize="13sp"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/add_role_edit_right_iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/right"/>
+            <TextView
+                android:id="@+id/role_edit_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_txtblack"
+                android:textSize="13sp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/add_role_edit_right_iv"
+                android:layout_marginRight="15dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/role_add_edit_clear_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/xgjs_clear"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/red"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/white_shape"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+
+</LinearLayout>

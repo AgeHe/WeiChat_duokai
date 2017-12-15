@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bac">
+
+    <FrameLayout
+        android:id="@+id/m_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="3dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_large"
+            android:text="支付成功，创建分身失败"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:scaleType="center"
+            android:layout_gravity="left"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/icon_back"
+            />
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/iv_order_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_order_number"
+            />
+        <View
+            android:id="@+id/view_line1"
+            android:layout_width="0.8dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/line_dark"
+            android:layout_toRightOf="@id/iv_order_number"
+            android:layout_centerVertical="true"
+            />
+
+        <EditText
+            android:id="@+id/et_order_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/view_line1"
+            android:maxLines="1"
+            android:lines="1"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:background="@null"
+            android:hint="请输入您的订单号"
+            android:textSize="@dimen/text_mid"/>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="@color/line_dark"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/iv_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_phone_number"
+            />
+        <View
+            android:id="@+id/view_line2"
+            android:layout_width="0.8dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/line_dark"
+            android:layout_toRightOf="@id/iv_phone_number"
+            android:layout_centerVertical="true"
+            />
+
+        <EditText
+            android:id="@+id/et_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/view_line2"
+            android:maxLines="1"
+            android:lines="1"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:background="@null"
+            android:hint="请输入您得联系方式(手机/QQ号)"
+            android:textSize="@dimen/text_mid"/>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="@color/line_dark"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_complaints_submit"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/selector_complaints_submit"
+        android:textSize="@dimen/text_large"
+        android:textColor="@color/text_white"
+        android:text="提交"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="@dimen/text_normal"
+        android:textColor="@color/text_dark_grey"
+        android:text="注：提交成功，三个工作日后输入您得订单号可查询结果。"/>
+</LinearLayout>

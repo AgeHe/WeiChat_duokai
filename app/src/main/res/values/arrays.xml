@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<string-array name="bank">
+        <item>中国人民银行</item>
+        <item>中国国家开发银行</item>
+        <item>中国农业发展银行</item>
+        <item>中国进出口银行</item>
+        <item>中国工商银行</item>
+        <item>中国农业银行</item>
+        <item>中国银行</item>
+        <item>中国建设银行</item>
+        <item>中国光大银行</item>
+        <item>中国民生银行</item>
+        <item>华夏银行</item>
+        <item>中信银行</item>
+        <item>恒丰银行</item>
+        <item>上海浦东发展银行</item>
+        <item>交通银行</item>
+        <item>浙商银行</item>
+        <item>兴业银行</item>
+        <item>深圳发展银行</item>
+        <item>招商银行</item>
+        <item>广东发展银行</item>
+        <item>美国花旗银行</item>
+        <item>英国汇丰银行</item>
+        <item>英国渣打银行</item>
+        <item>香港东亚银行</item>
+    </string-array>-->
+    <string-array name="suijiName">
+        <item>婉儿</item>
+        <item>joy</item>
+        <item>julie</item>
+        <item>凝天</item>
+        <item>梦柏</item>
+        <item>曼香</item>
+        <item>David</item>
+        <item>绿真</item>
+        <item>冰凝</item>
+        <item>代曼</item>
+        <item>Vivian</item>
+        <item>夏涵</item>
+        <item>幼翠</item>
+        <item>Bruce</item>
+    </string-array>
+
+
+    <string-array name="wxtxt">
+
+        <item>微信单聊</item>
+        <item>微信群聊</item>
+        <item>微信红包</item>
+        <item>微信零钱</item>
+        <item>微信转账</item>
+        <item>微信提现</item>
+        <item>我的钱包</item>
+        <item>朋友圈</item>
+        <item>新的朋友</item>
+        <item>零钱明细</item>
+        <item>视频聊天</item>
+        <item>语音聊天</item>
+
+    </string-array>
+
+    <string-array name="zfbtxt">
+
+        <item>支付宝转账</item>
+        <item>支付宝红包</item>
+        <item>支付宝余额</item>
+        <item>支付宝提现</item>
+        <item>余额宝</item>
+
+    </string-array>
+
+
+    <string-array name="qqtxt">
+
+        <item>QQ红包</item>
+        <item>QQ转账</item>
+        <item>QQ钱包</item>
+        <item>QQ余额</item>
+
+    </string-array>
+
+    <string-array name="bank">
+        <item>中国工商银行</item>
+        <item>中国邮政储蓄</item>
+        <item>浦发银行</item>
+        <item>农村信用社</item>
+        <item>华夏银行</item>
+        <item>中国农业银行</item>
+        <item>中国银行</item>
+        <item>中国建设银行</item>
+        <item>招商银行</item>
+        <item>中国民生银行</item>
+        <item>交通银行</item>
+    </string-array>
+
+    <string-array name="name">
+        <item>悉数沉淀</item>
+        <item>他腐朽年華</item>
+        <item>仺白了青春</item>
+        <item>暖寄归人</item>
+        <item>你是我的幸运儿</item>
+        <item>黒色ン誘惑灬</item>
+        <item>瞎闹腾i</item>
+        <item>花花花、小伙</item>
+        <item>厌世症i</item>
+        <item>人心可畏</item>
+        <item>妞╮笑个</item>
+        <item>彼此爱人i@</item>
+        <item>可喜可乐</item>
+        <item>無盡透明的思念</item>
+        <item>爱情自以为是</item>
+        <item>爱你心口难开</item>
+        <item>那傷。眞美</item>
+        <item>灬一抹丶苍白</item>
+        <item>带我装逼带我飞</item>
+        <item>ー 半 憂 傷</item>
+        <item>蝶恋花╮</item>
+        <item>哭花了素颜</item>
+        <item>回忆未来</item>
+        <item>怀念·最初</item>
+        <item>请在乎我１秒</item>
+    </string-array>
+
+    <string-array name="transferlevel">
+        <item>大众会员</item>
+        <item>黄金会员</item>
+        <item>铂金会员</item>
+        <item>钻石会员</item>
+
+    </string-array>
+    <string-array name="transfertype">
+        <item>余额</item>
+        <item>余额宝</item>
+
+    </string-array>
+    <string-array name="transferstatus">
+        <item>处理中</item>
+        <item>交易成功</item>
+
+    </string-array>
+    <string-array name="transferaccount">
+        <item>18171381217</item>
+        <item>18573558999</item>
+        <item>196697709@qq.com</item>
+        <item>41133227@qq.com</item>
+        <item>15618145569</item>
+        <item>13133048957</item>
+        <item>2208574854@qq.com</item>
+        <item>613276209@qq.com</item>
+
+    </string-array>
+
+    <string-array name="moneydetails">
+        <item>话费充值</item>
+        <item>微信红包</item>
+        <item>充值</item>
+        <item>退款</item>
+        <item>滴滴快车-张师傅</item>
+        <item>基金申购</item>
+        <item>订单S564XC46562125454</item>
+        <item>提现</item>
+        <item>开通VIP会员</item>
+        <item>QQ会员</item>
+    </string-array>
+
+
+
+
+    <!-- 省、自治区、直辖市、特别行政区 -->
+    <string-array name="province_item">
+        <item value="1322010">北京</item>
+        <item value="480">河北</item>
+        <item value="481">山东</item>
+        <item value="482">上海</item>
+        <item value="483">广东</item>
+        <item value="484">安徽</item>
+        <item value="485">福建</item>
+        <item value="486">甘肃</item>
+        <item value="487">广西</item>
+        <item value="488">贵州</item>
+        <item value="489">海南</item>
+        <item value="490">河南</item>
+        <item value="491">黑龙江</item>
+        <item value="492">湖北</item>
+        <item value="493">湖南</item>
+        <item value="494">吉林</item>
+        <item value="495">江苏</item>
+        <item value="496">江西</item>
+        <item value="497">辽宁</item>
+        <item value="498">内蒙古</item>
+        <item value="499">宁夏</item>
+        <item value="500">青海</item>
+        <item value="501">山西</item>
+        <item value="502">陕西</item>
+        <item value="503">四川</item>
+        <item value="504">天津</item>
+        <item value="505">西藏</item>
+        <item value="506">新疆</item>
+        <item value="507">云南</item>
+        <item value="508">浙江</item>
+        <item value="509">重庆</item>
+    </string-array>
+    <!--<item value="510">台湾</item>-->
+    <!--<item value="511">香港</item>-->
+    <!--<item value="512">澳门</item>-->
+
+
+    <!-- 个地级市 -->
+    <string-array name="beijin_province_item">
+        <item value="1322010" name="你好">北京</item>
+    </string-array>
+    <string-array name="heibei_province_item">
+        <item value="1329299">保定</item>
+        <item value="1316551">邯郸</item>
+        <item value="1329349">沧州</item>
+        <item value="1327369">邢台</item>
+        <item value="1316653">廊坊</item>
+        <item value="1328336">承德</item>
+        <item value="1329334">张家口</item>
+        <item value="1327334">衡水</item>
+        <item value="1322338">秦皇岛</item>
+        <item value="1328442">石家庄</item>
+        <item value="1329244">唐山</item>
+    </string-array>
+    <string-array name="shandong_province_item">
+        <item value="1317665">济南</item>
+        <item value="1316500">青岛</item>
+        <item value="1315695">烟台</item>
+        <item value="1329533">淄博</item>
+        <item value="1337112">枣庄</item>
+        <item value="1337133">滨州</item>
+        <item value="1325626">德州</item>
+        <item value="1325899">聊城</item>
+        <item value="1325656">临沂</item>
+        <item value="1318155">菏泽</item>
+        <item value="1333634">莱芜</item>
+        <item value="1325563">东营</item>
+        <item value="1316526">潍坊</item>
+        <item value="1317676">济宁</item>
+        <item value="1317613">泰安</item>
+        <item value="1325567">威海</item>
+        <item value="1318117">日照</item>
+    </string-array>
+    <string-array name="shanghai_province_item">
+        <item value="1329629">上海市</item>
+    </string-array>
+    <string-array name="guangdong_province_item">
+        <item value="1312957">深圳</item>
+        <item value="1328689">广州</item>
+        <item value="1326899">东莞</item>
+        <item value="1328608">珠海</item>
+        <item value="1326776">汕头</item>
+        <item value="1328840">佛山</item>
+        <item value="1328878">潮州</item>
+        <item value="1325066">揭阳</item>
+        <item value="1323212">云浮</item>
+        <item value="1328675">梅州</item>
+        <item value="1322675">汕尾</item>
+        <item value="1328674">河源</item>
+        <item value="1322639">阳江</item>
+        <item value="1316974">清远</item>
+        <item value="1328694">中山</item>
+        <item value="1322654">韶关</item>
+        <item value="1328698">湛江</item>
+        <item value="1328655">肇庆</item>
+        <item value="1326648">江门</item>
+        <item value="1325767">茂名</item>
+        <item value="1325063">惠州</item>
+    </string-array>
+    <string-array name="anhui_province_item">
+        <item value="1319551">合肥</item>
+        <item value="1315668">池州</item>
+        <item value="1322563">宣城</item>
+        <item value="1308553">芜湖</item>
+        <item value="1322552">蚌埠</item>
+        <item value="1315544">淮南</item>
+        <item value="1322570">安庆</item>
+        <item value="1319568">阜阳</item>
+        <item value="1452089">亳州</item>
+        <item value="1320565">巢湖</item>
+        <item value="1327580">六安</item>
+        <item value="1305325">铜陵</item>
+        <item value="1301310">马鞍山</item>
+        <item value="1322550">滁州</item>
+        <item value="1322559">黄山</item>
+        <item value="1302609">宿州</item>
+        <item value="1329561">淮北</item>
+    </string-array>
+    <string-array name="fujian_province_item">
+        <item value="1307587">福州</item>
+        <item value="1317822">龙岩</item>
+        <item value="1317828">宁德</item>
+        <item value="1325590">厦门</item>
+        <item value="1329593">莆田</item>
+        <item value="1325509">三明</item>
+        <item value="1315900">泉州</item>
+        <item value="1317800">漳州</item>
+        <item value="1311090">南平</item>
+    </string-array>
+    <string-array name="gansu_province_item">
+        <item value="1320936">张掖</item>
+        <item value="1310932">兰州</item>
+        <item value="1320949">白银</item>
+        <item value="1323938">天水</item>
+        <item value="1320940">酒泉</item>
+        <item value="1323932">定西</item>
+        <item value="1323941">甘南</item>
+        <item value="1320948">嘉峪关</item>
+        <item value="1322047">临夏</item>
+        <item value="1320939">陇南</item>
+        <item value="1322042">平凉</item>
+        <item value="1323934">庆阳</item>
+        <item value="1323945">武威</item>
+    </string-array>
+    <string-array name="guangxi_province_item">
+        <item value="1300593">柳州</item>
+        <item value="1300594">桂林</item>
+        <item value="1300597">梧州</item>
+        <item value="1300599">北海</item>
+        <item value="1300690">防城港</item>
+        <item value="1300697">钦州</item>
+        <item value="1300069">南宁</item>
+        <item value="1309792">贵港</item>
+        <item value="1300596">玉林</item>
+        <item value="1300696">百色</item>
+        <item value="1301494">贺州</item>
+        <item value="1300698">河池</item>
+    </string-array>
+    <string-array name="guizhou_province_item">
+        <item value="1323853">六盘水</item>
+        <item value="1320852">遵义</item>
+        <item value="1320853">安顺</item>
+        <item value="1323856">铜仁</item>
+        <item value="1320859">毕节</item>
+        <item value="1320851">贵阳</item>
+        <item value="1323859">兴义</item>
+        <item value="1320856">都匀</item>
+        <item value="1323855">凯里</item>
+    </string-array>
+    <string-array name="hainan_province_item">
+        <item value="1300500">海口</item>
+    </string-array>
+    <string-array name="henan_province_item">
+        <item value="1314001">郑州</item>
+        <item value="1321385">平顶山</item>
+        <item value="1321353">洛阳</item>
+        <item value="1327101">商丘</item>
+        <item value="1325304">安阳</item>
+        <item value="1325394">三门峡</item>
+        <item value="1325375">周口</item>
+        <item value="1327176">驻马店</item>
+        <item value="1320379">南阳</item>
+        <item value="1325381">信阳</item>
+        <item value="1326211">新乡</item>
+        <item value="1327122">许昌</item>
+        <item value="1328392">鹤壁</item>
+        <item value="1324304">焦作</item>
+        <item value="1324320">濮阳</item>
+        <item value="1327305">漯河</item>
+        <item value="1324305">开封</item>
+    </string-array>
+    <string-array name="heilongjiang_province_item">
+        <item value="1310082">齐齐哈尔</item>
+        <item value="1315990">双鸭山</item>
+        <item value="1325157">大兴安岭</item>
+        <item value="1320688">牡丹江</item>
+        <item value="1320699">佳木斯</item>
+        <item value="1311559">大庆</item>
+        <item value="1315995">鸡西</item>
+        <item value="1321288">伊春</item>
+        <item value="1319923">七台河</item>
+        <item value="1319959">鹤岗</item>
+        <item value="1321286">黑河</item>
+        <item value="1325155">绥化</item>
+        <item value="1311550">哈尔滨</item>
+    </string-array>
+    <string-array name="hubei_province_item">
+        <item value="1310066">武汉</item>
+        <item value="1324723">黄石</item>
+        <item value="1323565">十堰</item>
+        <item value="1326465">荆州</item>
+        <item value="1320722">宜昌</item>
+        <item value="1323568">襄阳</item>
+        <item value="1325728">汉口</item>
+        <item value="1322711">鄂州</item>
+        <item value="1324725">荆门</item>
+        <item value="1321721">孝感</item>
+        <item value="1325719">黄冈</item>
+        <item value="1323556">咸宁</item>
+        <item value="1325722">随州</item>
+        <item value="1323544">恩施</item>
+    </string-array>
+    <string-array name="hunan_province_item">
+        <item value="1310711">长沙</item>
+        <item value="1320331">株洲</item>
+        <item value="1320732">湘潭</item>
+        <item value="1320308">衡阳</item>
+        <item value="1320328">邵阳</item>
+        <item value="1324365">永州</item>
+        <item value="1310725">怀化</item>
+        <item value="1320730">岳阳</item>
+        <item value="1323744">张家界</item>
+        <item value="1320368">益阳</item>
+        <item value="1320736">常德</item>
+        <item value="1321738">娄底</item>
+        <item value="1320735">郴州</item>
+        <item value="1321743">吉首</item>
+    </string-array>
+    <string-array name="jilin_province_item">
+        <item value="1316692">吉林</item>
+        <item value="1327852">四平</item>
+        <item value="1327857">辽源</item>
+        <item value="1325266">通化</item>
+        <item value="1327811">白山</item>
+        <item value="1325883">延吉</item>
+        <item value="1316688">长春</item>
+        <item value="1325250">松原</item>
+        <item value="1325186">白城</item>
+    </string-array>
+    <string-array name="jiangsu_province_item">
+        <item value="1314516">南京</item>
+        <item value="1318267">苏州</item>
+        <item value="1317417">常州</item>
+        <item value="1325521">无锡</item>
+        <item value="1322524">徐州</item>
+        <item value="1323608">南通</item>
+        <item value="1328527">宿迁</item>
+        <item value="1317957">连云港</item>
+        <item value="1323625">淮安</item>
+        <item value="1338260">盐城</item>
+        <item value="1327658">扬州</item>
+        <item value="1317939">镇江</item>
+        <item value="1328523">泰州</item>
+    </string-array>
+    <string-array name="jiangxi_province_item">
+        <item value="1307799">南昌</item>
+        <item value="1317750">上饶</item>
+        <item value="1317773">九江</item>
+        <item value="1319799">萍乡</item>
+        <item value="1323757">新余</item>
+        <item value="1317080">鹰潭</item>
+        <item value="1313377">赣州</item>
+        <item value="1312525">宜春</item>
+        <item value="1317798">景德镇</item>
+        <item value="1315585">吉安</item>
+        <item value="1317768">抚州</item>
+    </string-array>
+    <string-array name="liaoning_province_item">
+        <item value="1306659">沈阳</item>
+        <item value="1313000">大连</item>
+        <item value="1312550">鞍山</item>
+        <item value="1313033">抚顺</item>
+        <item value="1313039">本溪</item>
+        <item value="1312557">丹东</item>
+        <item value="1313080">朝阳</item>
+        <item value="1323892">葫芦岛</item>
+        <item value="1312560">锦州</item>
+        <item value="1312562">营口</item>
+        <item value="1333232">阜新</item>
+        <item value="1323696">辽阳</item>
+        <item value="1318858">盘锦</item>
+        <item value="1318866">铁岭</item>
+    </string-array>
+    <string-array name="neimenggu_province_item">
+        <item value="1300954">包头</item>
+        <item value="1300959">乌海</item>
+        <item value="1301518">赤峰</item>
+        <item value="1301513">通辽</item>
+        <item value="1300957">鄂尔多斯</item>
+        <item value="1452480">呼伦贝尔</item>
+        <item value="1300958">巴彦淖尔</item>
+        <item value="1452483">乌兰察布</item>
+        <item value="1303043">兴安盟 </item>
+        <item value="1303045">锡林郭勒盟 </item>
+        <item value="1452489">阿拉善盟 </item>
+        <item value="1300950">呼和浩特</item>
+    </string-array>
+    <string-array name="ningxia_province_item">
+        <item value="1300796">银川</item>
+        <item value="1300790">石嘴山</item>
+        <item value="1300792">吴忠</item>
+        <item value="1300794">固原</item>
+    </string-array>
+    <string-array name="qinghai_province_item">
+        <item value="1300771">西宁</item>
+        <item value="1311973">黄南</item>
+        <item value="1309970">玉树</item>
+        <item value="1300770">格尔木</item>
+        <item value="1309971">果洛</item>
+        <item value="1300775">海北</item>
+        <item value="1300772">海东</item>
+        <item value="1300774">海南</item>
+        <item value="1308622">海西</item>
+
+    </string-array>
+    <string-array name="shanxi1_province_item">
+        <item value="1313300">太原</item>
+        <item value="1329392">大同</item>
+        <item value="1323353">阳泉</item>
+        <item value="1322355">长治</item>
+        <item value="1323356">晋城</item>
+        <item value="1313311">朔州</item>
+        <item value="1320988">晋中</item>
+        <item value="1313339">运城</item>
+        <item value="1329393">忻州</item>
+        <item value="1329396">临汾</item>
+        <item value="1313338">吕梁</item>
+    </string-array>
+    <string-array name="shanxi2_province_item">
+        <item value="1310951">西安</item>
+        <item value="1325917">宝鸡</item>
+        <item value="1320192">咸阳</item>
+        <item value="1320195">渭南</item>
+        <item value="1322842">铜川</item>
+        <item value="1320928">延安</item>
+        <item value="1321960">榆林</item>
+        <item value="1325928">汉中</item>
+        <item value="1325915">安康</item>
+        <item value="1323914">商洛</item>
+    </string-array>
+    <string-array name="sichuan_province_item">
+        <item value="1311188">成都</item>
+        <item value="1311808">自贡</item>
+        <item value="1321980">攀枝花</item>
+        <item value="1321934">泸州</item>
+        <item value="1321985">德阳</item>
+        <item value="1310815">绵阳</item>
+        <item value="1322830">广安</item>
+        <item value="1321917">达州</item>
+        <item value="1328169">雅安</item>
+        <item value="1321929">巴中</item>
+        <item value="1321990">广元</item>
+        <item value="1321922">遂宁</item>
+        <item value="1321942">内江</item>
+        <item value="1321967">乐山</item>
+        <item value="1321911">南充</item>
+        <item value="1321951">宜宾</item>
+        <item value="1320824">甘孜</item>
+        <item value="1320834">西昌</item>
+    </string-array>
+    <string-array name="tianjin_province_item">
+        <item value="1316318">天津</item>
+    </string-array>
+    <string-array name="xizang_province_item">
+        <item value="1322895">昌都地区</item>
+        <item value="1322894">林芝地区 </item>
+        <item value="1322893">山南地区 </item>
+        <item value="1322892">日喀则地区 </item>
+        <item value="1322896">那曲地区</item>
+        <item value="1322897">阿里地区 </item>
+        <item value="1322890">拉萨</item>
+    </string-array>
+    <string-array name="xinjiang_province_item">
+        <item value="1311908">克州</item>
+        <item value="1302962">库尔勒</item>
+        <item value="1304058">塔城</item>
+        <item value="1303134">博乐</item>
+        <item value="1303138">克拉玛依</item>
+        <item value="1303120">吐鲁番地区</item>
+        <item value="1303121">哈密地区</item>
+        <item value="1303126">阿克苏地区</item>
+        <item value="1302963">喀什地区 </item>
+        <item value="1304049">和田地区</item>
+        <item value="1300960">昌吉</item>
+        <item value="1303130">奎屯</item>
+        <item value="1302961">石河子</item>
+        <item value="1303136">伊犁</item>
+        <item value="1300961">乌鲁木齐</item>
+        <item value="1304059">阿勒泰地区</item>
+    </string-array>
+    <string-array name="yunnan_province_item">
+        <item value="1311626">昆明</item>
+        <item value="1321187">曲靖</item>
+        <item value="1321195">玉溪</item>
+        <item value="1321180">保山</item>
+        <item value="1321184">昭通</item>
+        <item value="1320888">丽江</item>
+        <item value="1321183">西双版纳</item>
+        <item value="1320882">德宏</item>
+        <item value="1321194">怒江</item>
+        <item value="1321197">迪庆</item>
+        <item value="1321198">思茅</item>
+        <item value="1323863">临沧</item>
+        <item value="1321182">楚雄</item>
+        <item value="1321190">大理</item>
+        <item value="1321191">红河</item>
+        <item value="1320876">文山</item>
+    </string-array>
+    <string-array name="zhejiang_province_item">
+        <item value="1316598">杭州</item>
+        <item value="1318596">宁波</item>
+        <item value="1315775">温州</item>
+        <item value="1325583">嘉兴</item>
+        <item value="1325205">湖州</item>
+        <item value="1327675">绍兴</item>
+        <item value="1321641">嵊州</item>
+        <item value="1317383">金华</item>
+        <item value="1337680">舟山</item>
+        <item value="1318561">台州</item>
+        <item value="1328258">丽水</item>
+    </string-array>
+    <string-array name="chongqing_province_item">
+        <item value="1316797">重庆</item>
+        <item value="1364824">黔江</item>
+    </string-array>
+    <!--<string-array name="taiwan_province_item">-->
+        <!--<item value="951">台北</item>-->
+        <!--<item value="952">台南</item>-->
+        <!--<item value="953">高雄</item>-->
+        <!--<item value="954">台湾</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="hongkong_province_item">-->
+        <!--<item value="955">香港</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="aomen_province_item">-->
+        <!--<item value="956">澳门</item>-->
+    <!--</string-array>-->
+
+</resources>

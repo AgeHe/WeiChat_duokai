@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f6f9f9">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/qq_withdrawable_preview_title_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_qqhb_back"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/qqzz_preview_black"
+                android:textColor="@color/color_white"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qqzz_preview_zzxq"
+            android:textColor="@color/color_white"
+            android:textSize="17sp"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qqzz_preview_zzjl"
+            android:textColor="@color/color_white"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/qq_withdrawable_preview_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_qqzz_ok"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="96dp"/>
+
+    <TextView
+        android:id="@+id/qq_withdrawable_preview_status_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/qqzz_preview_skcg"
+        android:textColor="@color/color_txtblack"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/qq_withdrawable_preview_money_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22.00"
+            android:textColor="#333333"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qqzz_preview_yuan"
+            android:textColor="#333333"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/qq_withdrawable_preview_des_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/yzrndye"
+            android:textColor="@color/color_txtash"/>
+
+            <LinearLayout
+                android:id="@+id/qq_withdrawable_preview_from_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="23dp"
+                android:visibility="gone">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/qqblue_shape"
+                    android:layout_margin="20dp"
+                    android:text="@string/qqzz_preview_ckye"
+                    android:textColor="@color/color_white"
+                    android:textSize="16sp"
+                    style="?android:attr/borderlessButtonStyle"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_noshape"
+                    android:text="@string/qqzz_preview_txdyhk"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp"
+                    style="?android:attr/borderlessButtonStyle"/>
+
+            </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/qq_withdrawable_preview_to_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/banner"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:visibility="visible"
+            android:layout_marginTop="120dp"/>
+        </LinearLayout>
+</RelativeLayout>

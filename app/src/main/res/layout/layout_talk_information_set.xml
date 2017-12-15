@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ebebeb">
+
+    <RelativeLayout
+    android:id="@+id/wxtalk_info_title_layout"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#393A3F">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/szltxx"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/wxtalk_info_title_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_back"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/talk_info_myself_icon_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/color_white"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/szltxx_zj"
+            android:textColor="#2a2a2a"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+
+        <ImageView
+            android:id="@+id/talk_info_myself_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/role_000"/>
+
+        <TextView
+            android:id="@+id/talk_info_myself_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/talk_info_myself_iv"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/color_txtash"
+            android:text="@string/qqhb_qxz"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/txtash"/>
+    <RelativeLayout
+        android:id="@+id/talk_info_herself_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/color_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/szltxx_df"
+            android:textColor="#2a2a2a"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+
+        <ImageView
+            android:id="@+id/talk_info_herself_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/role_000"/>
+
+        <TextView
+            android:id="@+id/talk_info_herself_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/talk_info_herself_iv"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/color_txtash"
+            android:text="@string/qqhb_qxz"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/txtash"/>
+    <RelativeLayout
+        android:id="@+id/talk_info_bgpicture_layout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/color_white"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/szltxx_szltbj"
+            android:textColor="#2a2a2a"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+
+        <ImageView
+            android:id="@+id/talk_info_bgpicture"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/icon_picture"
+            android:layout_marginRight="11dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="11dp"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/txtash"/>
+
+
+    <Button
+        android:id="@+id/talk_info_save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/green_shape"
+        android:text="@string/szltxx_save"
+        android:textSize="17sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"/>
+
+
+
+</LinearLayout>

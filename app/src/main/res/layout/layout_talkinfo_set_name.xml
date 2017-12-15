@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/white_shape"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bjdfwxnc"
+            android:textSize="18sp"
+            android:textColor="#2a2a2a"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:id="@+id/talk_info_dialog_setname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/bjdfwxnc_hint"
+            android:paddingTop="15dp"
+            android:paddingLeft="15dp"
+            android:theme="@style/MyEditText"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dedede"
+            android:layout_marginTop="15dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/talk_info_dialog_cancle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/bjdfwxnc_clear"
+                android:textColor="#2a2a2a"
+                android:textSize="17sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#dedede"/>
+            <TextView
+                android:id="@+id/talk_info_dialog_sure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/bjdfwxnc_sure"
+                android:textColor="#2a2a2a"
+                android:textSize="17sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

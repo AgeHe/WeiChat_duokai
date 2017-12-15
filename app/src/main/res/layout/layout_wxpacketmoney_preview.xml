@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/packetmoney_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/color_title">
+
+        <ImageView
+            android:id="@+id/packetmoney_title"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/abc_ic_ab_back_mtrl_am_alpha"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/packetmoney_title">
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#363636"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wxlq"
+                android:textColor="@color/color_white"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/packetmoney_preview_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/wxlq_lqmx"
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#363636"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@id/packetmoney_preview_tag"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/rule_preview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#EB8C38"
+        android:text="@string/weixinlingqian_txsfgz"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:layout_below="@id/packetmoney_title_layout"/>
+
+    <LinearLayout
+        android:id="@+id/packetmoney_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cjwt"
+            android:textColor="#6682BA"
+            android:textSize="12sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bfwycfttg"
+            android:textColor="#999999"
+            android:textSize="11sp"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/packetmoney_title_layout"
+        android:layout_above="@id/packetmoney_bottom_layout">
+        <ImageView
+            android:id="@+id/packetmoney_preview_iv"
+            android:layout_width="101dp"
+            android:layout_height="101dp"
+            android:src="@mipmap/amg"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/lq_wdlq"
+            android:textColor="#010101"
+            android:textSize="18sp"
+            android:layout_marginTop="14dp"/>
+
+        <TextView
+            android:id="@+id/moneypacket_preview_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="¥555.00"
+            android:textColor="#323232"
+            android:textSize="42sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/green_shape"
+            android:layout_marginTop="42dp"
+            android:text="@string/lq_cz"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/wxlq_shape"
+            android:layout_marginTop="14dp"
+            android:text="@string/lq_tx"
+            android:textColor="#323232"
+            android:textSize="16sp"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_lingqian_licaitong"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="4dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lqlcrlqawsy"
+                android:textSize="13sp"
+                android:textColor="#6682BA"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

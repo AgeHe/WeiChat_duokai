@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb">
+
+
+    <RelativeLayout
+        android:id="@+id/wxtalk_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#393A3F"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wxdhscq"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"/>
+
+        <ImageView
+            android:id="@+id/wxtalk_title_iv"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/abc_ic_ab_back_mtrl_am_alpha"
+            android:padding="8dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wxtalk_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/wxtalk_title_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wxdhscq_szltxx"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/informatioin_iv1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:src="@mipmap/role_000"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:id="@+id/informatioin_iv2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@id/informatioin_iv1"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/role_000"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/add_talk_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/talk_add_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/wxdhscq_add"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/green_shape"/>
+        <Button
+            android:id="@+id/talk_preview_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/wxdhscq_preview"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/blue_shape"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/wxtalk_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/wxtalk_information"
+        android:layout_above="@id/add_talk_btn_layout"
+        android:divider="@null"></ListView>
+
+</RelativeLayout>

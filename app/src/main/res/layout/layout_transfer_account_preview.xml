@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/transfer_account_preview_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@color/color_title">
+
+        <ImageView
+            android:id="@+id/transfer_account_preview_title_iv"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/abc_ic_ab_back_mtrl_am_alpha"
+            android:paddingLeft="10dp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_txtblack"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jyxq"
+            android:textColor="@color/color_white"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/transfer_account_preview_transfer_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转账时间: 123456"
+            android:textColor="@color/color_txtash"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/transfer_account_preview_collect_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收钱时间: 123456"
+            android:textColor="@color/color_txtash"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/transfer_account_preview_title_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/transfer_account_preview_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/wechat_transfer_success"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView
+            android:id="@+id/transfer_account_previewno_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/wechat_transfer_success"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/transfer_account_preview_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jyxq_ysq"
+            android:textSize="20sp"
+            android:textColor="@color/color_black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/transfer_account_preview_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥22222"
+            android:textSize="45sp"
+            android:textColor="@color/color_black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/transfer_collect_context_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jyxq_ycrnd"
+                android:textSize="15sp"
+                android:textColor="@color/color_txtash"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jyxq_lq"
+                android:textSize="15sp"
+                android:textColor="@color/wxblue"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/transfer_collect_context_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jyxq_ycrdfdlq"
+            android:textSize="15sp"
+            android:textColor="@color/color_txtash"
+            android:layout_gravity="center_horizontal"/>
+        <LinearLayout
+            android:id="@+id/transfer_context_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jyxq_ytnpywqr_1"
+                android:textSize="15sp"
+                android:textColor="@color/color_txtash"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jyxq_cfzzxx"
+                android:textSize="15sp"
+                android:textColor="@color/wxblue"/>
+        </LinearLayout>
+        <!--待收钱-->
+        <LinearLayout
+            android:id="@+id/transfer_norcollect_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:visibility="gone">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jyxq_qrsk"
+                android:background="@drawable/green_shape"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/color_white"
+                android:textSize="18sp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jyxq_ytnwqrthdf_1"
+                    android:textSize="15sp"
+                    android:textColor="@color/color_txtash"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jyxq_ljth"
+                    android:textSize="15sp"
+                    android:textColor="@color/wxblue"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

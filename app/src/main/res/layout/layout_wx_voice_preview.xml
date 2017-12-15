@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/wx_voice_preview_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A0A0A0">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e0000000"
+            android:alpha="0.7"/>
+        <ImageView
+            android:id="@+id/wx_voice_preview_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/wechat_voip_switch"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"/>
+
+
+        <com.zhushou.weichat.screenshot.view.XCRoundRectImageView
+            android:id="@+id/wx_voice_preview_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp" />
+
+        <TextView
+            android:id="@+id/wx_voice_preview_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxxxx"
+            android:textColor="@color/color_white"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/wx_voice_preview_icon"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/wx_voice_preview_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yqnjxyylt"
+            android:textColor="#624c3e"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/wx_voice_preview_name"
+            android:layout_marginTop="10dp"/>
+
+
+<!--nocall-->
+        <RelativeLayout
+            android:id="@+id/voice_preview_nocall_btn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:visibility="visible">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp">
+
+                <ImageView
+                    android:id="@+id/voice_call_btn_not"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/wechat_voip_hangup"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ft_gd"
+                    android:textColor="@color/color_white"
+                    android:textSize="13sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/voice_call_btn_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/wechat_voip_answer"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ft_jt"
+                    android:textColor="@color/color_white"
+                    android:textSize="13sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <!--calling-->
+        <LinearLayout
+            android:id="@+id/voice_preview_calling_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/wx_voice_calling_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/yylt_01_00"
+                android:textSize="15sp"
+                android:textColor="@color/color_white"
+                android:layout_marginBottom="20dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/voice_preview_calling_btn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/voice_preview_calling_btn_transfervoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/wechat_voip_ban_on"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yylt_jy"
+                android:textSize="13sp"
+                android:textColor="@color/color_white"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/voice_preview_calling_btn_over"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/wechat_voip_hangup"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ft_gd"
+                android:textSize="13sp"
+                android:textColor="@color/color_white"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/voice_preview_calling_btn_transfercamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/wechat_voip_speaker_on"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yylt_mt"
+                android:textSize="13sp"
+                android:textColor="@color/color_white"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:drawable="@drawable/pay_wx_shape" android:state_pressed="false"/>
+        <item android:state_pressed="true">
+                <shape android:shape="rectangle">
+                        <stroke
+                            android:color="@color/btn_oval_bk"
+                            android:width="2dp"/>
+                        <corners android:radius="25dp" />
+                        <solid android:color="@color/text_dark"/>
+                </shape>
+        </item>
+</selector>

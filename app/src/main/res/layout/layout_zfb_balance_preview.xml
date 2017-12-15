@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F9">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="218dp"
+        android:background="@color/zfbblue">
+
+        <RelativeLayout
+            android:id="@+id/zfb_balance_preview_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/zfb_balance_preview_title_iv"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/abc_ic_ab_back_mtrl_am_alpha"
+                android:padding="7dp"
+                android:layout_marginLeft="7dp"/>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#6AA2EB"
+                android:layout_toRightOf="@id/zfb_balance_preview_title_iv"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yue"
+                android:textColor="@color/color_white"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/zfb_balance_preview_title_iv"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yue_mx"
+                android:textColor="@color/color_white"
+                android:textSize="17sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="14dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/balance_account_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yue_yezh"
+                android:textSize="14sp"
+                android:textColor="#d6e5fa"
+                android:layout_marginLeft="16dp"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/alipay_help"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/zfb_balance_preview_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22.00"
+                android:textColor="@color/color_white"
+                android:textSize="75sp"
+                android:layout_below="@id/balance_account_tv"
+                android:layout_alignLeft="@id/balance_account_tv"
+                android:layout_marginTop="23dp"
+                android:lines="1"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/color_white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/balance_add_money_iv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/alipay_ye_cz"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/yue_cz"
+            android:textColor="@color/color_txtblack"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/balance_add_money_iv"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/ashbg"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/color_white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/balance_tx_money_iv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/alipay_ye_tx"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/yue_tx"
+            android:textColor="@color/color_txtblack"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/balance_tx_money_iv"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/ashbg"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/ashbg"
+        android:layout_marginTop="20dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/color_white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/balance_jfb_money_iv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/alipay_ye_jfb"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/yue_jfb"
+            android:textColor="@color/color_txtblack"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/balance_jfb_money_iv"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/ashbg"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="21dp">
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/zfb_jd_tag"
+            android:layout_gravity="bottom"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yue_xjjk"
+            android:textColor="@color/wxblue"
+            android:textSize="12sp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+</LinearLayout>

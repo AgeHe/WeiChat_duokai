@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#393A3F">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txxq"
+            android:textColor="@color/color_white"
+            android:textSize="17sp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/withdrawals_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/wechat_transfer_receiving_new"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wxlq_txsqytj"
+        android:textColor="#111111"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="33dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#c9c9c9"
+        android:layout_marginTop="32dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wxlq_yhk"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginLeft="17dp"/>
+        <TextView
+            android:id="@+id/withdrawals_preview_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中国工商银行 尾号5552"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginRight="19dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wxlq_txje"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginLeft="17dp"/>
+        <TextView
+            android:id="@+id/withdrawals_preview_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥2222.00"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginRight="19dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/poundage_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wxlq_sxf"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginLeft="17dp"/>
+        <TextView
+            android:id="@+id/poundage_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥2.22"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginRight="19dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#c9c9c9"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/withdrawals_preview_btnbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_shape"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/wxlq_wc"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        style="?android:attr/borderlessButtonStyle"/>
+</LinearLayout>

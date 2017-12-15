@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bac"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/m_toolbar"
+        style="@style/ToolBar"
+        android:elevation="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="自动抢红包"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_large"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:layout_gravity="right"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="center"
+            android:src="@mipmap/back" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.zhushou.weichat.ui.view.ScrollTextView
+        android:id="@+id/tv_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/m_toolbar"
+        android:background="@color/red_packets_baccolor_scroll_text"
+        android:drawableLeft="@mipmap/ic_hb_voice"
+        android:drawablePadding="5dp"
+        android:elevation="0dp"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:scrollHorizontally="true"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="@color/red_packets_color_scroll_text"
+        android:textSize="@dimen/text_mid"/>
+
+    <ScrollView
+        android:id="@+id/sl_red_packets"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_scroll"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/themt_bacd9"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_red_packets_top_bac"
+                android:elevation="2dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_scroll_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="1dp"
+                        android:background="@drawable/shape_red_packets_arrow_left" />
+
+                    <TextView
+                        android:id="@+id/tv_hb_userid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_normal" />
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="1dp"
+                        android:background="@drawable/shape_red_packets_arrow_right" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_red_packets_stauts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_scroll_user"
+                    android:layout_centerHorizontal="true"
+                    android:text="正在抢红包中..."
+                    android:textColor="@color/red_packets_status_text"
+                    android:textSize="@dimen/text_mid" />
+
+                <LinearLayout
+                    android:id="@+id/ll_red_packets_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_red_packets_stauts"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.zhushou.weichat.auxiliary.ui.view.RiseNumberTextView
+                            android:id="@+id/tv_red_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="0"
+                            android:lines="1"
+                            android:textColor="@color/text_white"
+                            android:textSize="34sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_red_number"
+                            android:layout_centerHorizontal="true"
+                            android:text="已抢红包(个)"
+                            android:textColor="@color/text_white"
+                            android:textSize="@dimen/text_normal" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:background="@color/text_white" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.zhushou.weichat.auxiliary.ui.view.RiseNumberTextView
+                            android:id="@+id/tv_red_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="00.00"
+                            android:textColor="@color/text_white"
+                            android:textSize="34sp"
+                            android:lines="1"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_red_money"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:text="红包金额(元)"
+                            android:textColor="@color/text_white"
+                            android:textSize="@dimen/text_normal" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@id/ll_red_packets_value">
+
+                    <TextView
+                        android:id="@+id/tv_intent_help"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="-20dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/shape_red_packets_help_bac"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="5dp"
+                        android:text="红包帮助"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_normal" />
+
+                    <TextView
+                        android:id="@+id/tv_red_packets_record"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="-20dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/shape_red_packets_help_bac"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="30dp"
+                        android:paddingTop="5dp"
+                        android:text="红包记录"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_normal" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="center"
+                        android:src="@mipmap/ic_red_packets_buttom"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="17dp"
+                        android:visibility="gone"
+                        />
+                    <ImageView
+                        android:id="@+id/iv_animation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:scaleType="center"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <include layout="@layout/layout_activity_auxiliary_hb_function" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加载中..."
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_mid" />
+    </LinearLayout>
+</RelativeLayout>

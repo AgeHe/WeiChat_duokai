@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/m_toolbar"
+        style="@style/ToolBar"
+        android:elevation="3dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_large"
+            android:text="抢红包帮助"
+            android:textStyle="bold"/>
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:scaleType="center"
+            android:layout_gravity="right"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/back"/>
+    </android.support.v7.widget.Toolbar>
+</RelativeLayout>

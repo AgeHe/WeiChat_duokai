@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_bg">
+
+    <LinearLayout
+        android:id="@+id/mynewfriendadd_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/color_title">
+        <ImageView
+            android:id="@+id/mynewfriendadd_title_iv"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/abc_ic_ab_back_mtrl_am_alpha"
+            android:paddingLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tjjl"
+            android:textSize="18sp"
+            android:textColor="@color/color_white"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/newfriendadd_role_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tjjl_role"
+            android:textSize="15sp"
+            android:textColor="@color/color_txtblack"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/newfriend_add_right_iv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:id="@+id/newfriend_add_icon_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/role_000"
+            android:layout_toLeftOf="@id/newfriend_add_right_iv"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/newfriend_add_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qqhb_qxz"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/newfriend_add_icon_iv"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/newfriend_add_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/tjjl_context_hint"
+        android:textSize="15sp"
+        android:paddingLeft="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ashbg"
+        android:layout_marginLeft="10dp"/>
+    <RelativeLayout
+        android:id="@+id/newfriend_add_tag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tjjl_isfriend"
+            android:textColor="@color/color_txtblack"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/newfriend_add_tag_iv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/webviewtab_back_normal"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/newfriend_add_save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_shape"
+        android:text="@string/tjjl_save"
+        android:textSize="18sp"
+        android:textColor="@color/color_white"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

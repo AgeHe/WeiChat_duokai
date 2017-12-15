@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?android:actionBarSize"
+        android:paddingBottom="6.0dip"
+        android:paddingTop="6.0dip"
+        android:gravity="center_horizontal"
+        android:background="#ddffe49d">
+
+        <ImageView
+            android:id="@+id/icon_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8.0dip"
+            android:scaleType="center"
+            android:src="@mipmap/ic_main_tips"
+            />
+
+        <!--android:shadowDx="0.0"-->
+        <!--android:shadowDy="-1.0"-->
+        <!--android:shadowRadius="1.0"-->
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/icon_iv"
+            android:shadowColor="@android:color/black"
+            android:textColor="#ff4f32"
+            android:textSize="13.0sp"
+            android:text="@string/main_tips_str"/>
+    </RelativeLayout>
+
+</merge>

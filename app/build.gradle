@@ -1,0 +1,148 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+
+//        repositories {
+//            mavenCentral()
+//        }
+    }
+    defaultConfig {
+        minSdkVersion 18
+        targetSdkVersion 25
+        versionCode 147
+        versionName "1.4.7"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+//        jackOptions {
+//            enabled true
+//        }
+    }
+    buildscript {
+        repositories {
+            jcenter()
+        }
+    }
+    signingConfigs {
+        release {
+            keyAlias 'duokai'
+            keyPassword 'hehongwen.0312'
+            storeFile file('D:/gitProject/DuoKaiKey.store.jks')
+            storePassword 'hehongwen.0312'
+        }
+        release_dkzs {
+            keyAlias 'wxdkzs'
+            keyPassword 'hehongwen'
+            storeFile file('D:/gitProject/wxdkzsKey.store.jks')
+            storePassword 'hehongwen'
+        }
+        release_dksqws {
+            keyAlias 'wxdksq'
+            keyPassword 'hehongwen'
+            storeFile file('D:/gitProject/wxdksqKey.store.jks')
+            storePassword 'hehongwen'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        release_dkzs {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release_dkzs
+        }
+        release_dksqws {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        dksqws_self{
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release_dksqws
+        }
+    }
+
+    productFlavors {
+        main {
+            applicationId "com.zhushou.weichat"
+            manifestPlaceholders = [APPNAME: "微信多开助手", APPNAMEPROVIDER: "com.zhushou.weichat.fileprovider", APP: "fssq"]
+        }
+        dkzs {
+            applicationId "com.dkzs.weichat"
+            manifestPlaceholders = [APPNAME: "多开助手", APPNAMEPROVIDER: "com.dkzs.weichat.fileprovider", APP: "wxdkzs"]
+        }
+        dksqws {
+            applicationId "com.zhushou.weichat"
+            manifestPlaceholders = [APPNAME: "多开神器小助手", APPNAMEPROVIDER: "com.zhushou.weichat.fileprovider", APP: "fssq"]
+            //多开神器 微信多开助手换icon应用名版
+        }
+        dksqwsself {
+            applicationId "com.dksq.weichat"
+            manifestPlaceholders = [APPNAME: "多开神器", APPNAMEPROVIDER: "com.dksq.weichat.fileprovider", APP: "wxdksq"]
+            //微信多开神器
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+        encoding = 'UTF-8'
+    }
+}
+allprojects {
+    repositories {
+        jcenter()
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+//    compile 'com.tuia:sdk:2.2.4'
+    compile project(path: ':lib')
+    compile project(':lib')
+
+    compile(name: 'tuia-2.2.5', ext: 'aar')
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.jonathanfinerty.once:once:1.0.3'
+    compile 'com.zhousf.lib:okhttp3:2.8.5'
+    compile 'com.android.support:design:25.1.0'
+    compile 'org.jdeferred:jdeferred-android-aar:1.2.4'
+    compile 'com.github.castorflex.smoothprogressbar:library:1.1.0'
+    //友盟
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    //新手引导
+    compile 'com.isanwenyu.highlight:highlight:1.5.1'
+    //    微商功能库
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //图片下载缓存Picasso.with(context).load("http://i.imgur.com/DvpvklR.png").into(imageView);
+    compile 'com.jzxiang.pickerview:TimePickerDialog:1.0.1'
+    compile 'com.foamtrace:photopicker:1.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile files('libs/mob_ad_sdk_v1.1.3_2017_03_30_release.jar')
+    compile 'com.afollestad:easyvideoplayer:0.3.0'
+
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+
+    //微信分享
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+
+}

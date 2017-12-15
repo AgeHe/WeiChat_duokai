@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_login_bg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_mid"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:text="确认退出微信多开助手"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"/>
+    
+    <RelativeLayout
+        android:id="@+id/rl_exit_adv"
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_exit_banner"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_adv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_exit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/text_large"
+            android:textColor="#c7c7c7"
+            android:text="残忍退出"
+            android:gravity="center"
+            android:background="?android:selectableItemBackground"/>
+        <View
+            android:layout_width="0.8dp"
+            android:layout_height="match_parent"
+            android:background="#dcdcdc"/>
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/text_large"
+            android:textColor="#6881fd"
+            android:text="取消"
+            android:gravity="center"
+            android:background="?android:selectableItemBackground"/>
+
+    </LinearLayout>
+</LinearLayout>

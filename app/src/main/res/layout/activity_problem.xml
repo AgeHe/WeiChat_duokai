@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bac">
+
+    <FrameLayout
+        android:id="@+id/m_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="3dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_large"
+            android:text="其他问题咨询"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:scaleType="center"
+            android:layout_gravity="left"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/icon_back"
+            />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:id="@+id/iv_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_phone_number"
+            />
+        <View
+            android:id="@+id/view_line2"
+            android:layout_width="0.8dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/line_dark"
+            android:layout_toRightOf="@id/iv_phone_number"
+            android:layout_centerVertical="true"
+            />
+
+        <EditText
+            android:id="@+id/et_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/view_line2"
+            android:maxLines="1"
+            android:lines="1"
+            android:inputType="phone"
+            android:maxLength="12"
+            android:background="@null"
+            android:hint="请输入您得联系方式(手机/QQ号)"
+            android:textSize="@dimen/text_mid"/>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="@color/line_dark"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <EditText
+        android:id="@+id/et_complaints_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="5dp"
+        android:lines="7"
+        android:textSize="@dimen/text_mid"
+        android:textColor="@color/text_color"
+        android:textColorHint="@color/text_dark"
+        android:background="@drawable/shape_edittext_bac"
+        android:hint="请详细描述您所遇到的问题:"
+        android:gravity="left"/>
+
+    <TextView
+        android:id="@+id/tv_complaints_submit"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/selector_complaints_submit"
+        android:textSize="@dimen/text_large"
+        android:textColor="@color/text_white"
+        android:text="提交"
+        android:gravity="center"/>
+
+</LinearLayout>

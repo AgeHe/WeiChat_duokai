@@ -1,0 +1,263 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+<!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionBarSize">45dip</item>
+    </style>
+    <style name="ScreenShotTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/color_black</item>
+        <item name="colorPrimaryDark">@color/color_black</item>
+        <item name="colorAccent">@color/color_black</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="mActionBar.ActionBar" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarSize">48dip</item>
+    </style>
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/windowBackground</item>
+    </style>
+    <style name="AppTheme.NoTitleBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ToolBar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="popupTheme">@style/ActionBarPopupThemeOverlay</item>
+        <item name="theme">@style/ActionBarThemeOverlay</item>
+        <item name="titleTextAppearance">@style/ActionBar.TitleText</item>
+        <item name="android:theme">@style/ActionBarThemeOverlay</item>
+    </style>
+    <style name="MainToolBar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="popupTheme">@style/ActionBarPopupThemeOverlay</item>
+        <item name="theme">@style/ActionBarThemeOverlay</item>
+        <item name="titleTextAppearance">@style/ActionBar.TitleText</item>
+        <item name="android:theme">@style/ActionBarThemeOverlay</item>
+    </style>
+
+    <style name="ActionBarThemeOverlay" parent="">
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="colorControlNormal">#fff</item>
+        <item name="colorControlHighlight">#3fff</item>
+    </style>
+
+    <style name="ActionBarPopupThemeOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="ActionBar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_mid</item>
+    </style>
+
+    <style name="TransparentTheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@android:color/background_dark</item>
+        <item name="colorPrimaryDark">@android:color/background_dark</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="ShareOrPayDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>//无标题
+        <item name="android:windowBackground">@null</item>//背景
+        <item name="android:windowIsFloating">true</item>//悬浮
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="PopupDialog" parent="@style/ShareDialogWC">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+    </style>
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="DialogAlphaAnim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_push_alpha_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_push_alpha_out</item>
+    </style>
+    <style name="DialogAlpha" parent="@style/ShareDialogWC">
+        <item name="android:windowAnimationStyle">@style/DialogAlphaAnim</item>
+    </style>
+
+    <style name="ScaleAnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/push_scale_out</item>
+    </style>
+
+    <!--<item name="android:windowBackground">#00ffffff</item>-->
+    <style name="ShareDialogWC" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:selectableItemBackground">@drawable/selector_dialog_selector_item_bac</item>
+    </style>
+
+    <style name="WcDialog" parent="@style/ShareDialogWC">
+
+    </style>
+    
+
+    <!--微商功能截图-->
+    <style name="activitytransparent" parent="AppTheme">
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+    </style>
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#3fb838</item>
+        <item name="colorControlActivated">#3fb838</item>
+    </style>
+    <style name="WsAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/txtblack</item>
+        <item name="colorPrimaryDark">#303135</item>
+        <item name="colorAccent">@color/txtblack</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppThemeLQ" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/txtblack</item>
+        <item name="colorPrimaryDark">#303135</item>
+        <item name="colorAccent">@color/txtblack</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppThemeHB" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/txtblack</item>
+        <item name="colorPrimaryDark">#D85940</item>
+        <item name="colorAccent">@color/txtblack</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <!-- 自定义Dialog在初始化时的样式 -->
+    <style name="dialog_untran" parent="dialog_tran">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 自定义Dialog在显示时的样式 -->
+    <style name="dialog_tran" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+    <!-- 中浅黑色字体 -->
+    <style name="FontStyleNormalLightBlackMiddle"  parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/home_text_light_black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- 自定义Dialog中button的样式 -->
+    <style name="dialog_btn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:background">@drawable/btn_selector</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--自定义dialog背景全透明无边框theme -->
+    <style name="MyDialog" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!--<item name="android:selectableItemBackground">@drawable/selector_dialog_selector_item_bac</item>-->
+    </style>
+
+    <style name="qqblue" parent="AppTheme">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="zfb" parent="AppTheme">
+        <item name="colorPrimary">@color/zfbstatus</item>
+        <item name="colorPrimaryDark">@color/zfbstatus</item>
+        <item name="colorAccent">@color/zfbstatus</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="zfbblue" parent="AppTheme">
+        <item name="colorPrimary">@color/zfbblue</item>
+        <item name="colorPrimaryDark">@color/zfbblue</item>
+        <item name="colorAccent">@color/zfbblue</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ActionMenuTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="android:textSize">@dimen/action_text_size</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="PhotoPickerTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/photopicker_background</item>
+        <item name="actionMenuTextAppearance">@style/ActionMenuTextStyle</item>
+        <!--<item name="actionBarTheme">@style/actionBarTheme</item>-->
+        <!--<item name="actionBarPopupTheme">@style/actionBarPopupTheme</item>-->
+    </style>
+
+    <declare-styleable name="BubbleImageView">
+        <attr name="triangle_marginTop" format="dimension" />
+        <attr name="triangle_height" format="dimension" />
+        <attr name="triangle_width" format="dimension" />
+        <attr name="rect_radius" format="dimension" />
+        <attr name="shadow_color" format="color" />
+        <attr name="direction" format="integer">
+            <enum name="left" value="1"></enum>
+            <enum name="right" value="2"></enum>
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="GifView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CustomTheme">
+        <attr name="gifViewStyle" format="reference" />
+    </declare-styleable>
+    <style name="Widget_GifView_fit"></style>
+
+    <!-- 自定义样式的name属性用于引用，父亲是默认的style -->
+    <style name="InitProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <!-- 最大高度50dp，最小高度10dp，进度值确定，Drawable样式文件引用 -->
+        <item name="android:maxHeight">50dp</item>
+        <item name="android:minHeight">10dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/progress_color_horizontal</item>
+    </style>
+
+    <style name="dialog_JB_SF" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_jb_sf_in</item>
+        <!--<item name="android:windowExitAnimation">@anim/push_bottom_out</item>-->
+    </style>
+
+</resources>

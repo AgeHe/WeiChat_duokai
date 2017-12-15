@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/color_white">
+
+        <ImageView
+            android:id="@+id/zfb_transferaccount_preview_title_iv"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:src="@mipmap/alipay_back_blue"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/ashbg"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/zfb_transferaccount_preview_title_iv"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/zdxq"
+            android:textColor="@color/color_black"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/zfb_transferaccount_preview_title_iv"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/alipay_more_blue"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/ashbg"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white">
+
+        <LinearLayout
+            android:id="@+id/zfb_transferaccount_preview_info_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.zhushou.weichat.screenshot.view.CircleImageView
+                    android:id="@+id/zfb_transferaccount_preview_info_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@mipmap/role_000"/>
+
+                <ImageView
+                    android:id="@+id/zfb_transferaccount_preview_info_icon_tag"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@mipmap/alipay_vip_hj"
+                    android:layout_alignBottom="@id/zfb_transferaccount_preview_info_icon"
+                    android:layout_alignRight="@+id/zfb_transferaccount_preview_info_icon"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/zfb_transferaccount_preview_info_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="马力"
+                android:textColor="#2a2a2a"
+                android:textSize="14sp"
+                android:layout_marginLeft="12dp"
+                android:layout_gravity="center_vertical"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@mipmap/right"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/zfb_transferaccount_preview_money_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/zfb_transferaccount_preview_info_layout"
+            android:layout_marginTop="35dp">
+
+            <TextView
+                android:id="@+id/zfb_transferaccount_preview_money_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textColor="@color/color_txtblack"
+                android:textSize="30sp"/>
+            <TextView
+                android:id="@+id/zfb_transferaccount_preview_money_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22.00"
+                android:textColor="@color/color_txtblack"
+                android:textSize="30sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/zfb_transferaccount_preview_money_layout">
+
+            <TextView
+                android:id="@+id/zfb_transferaccount_preview_status_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="交易成功"
+                android:textColor="#a5a5a5"
+                android:textSize="14sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"/>
+
+            <RelativeLayout
+                android:id="@+id/zfb_transferaccount_preview_payment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zdxq_fkfs"
+                    android:textColor="@color/txt_6"
+                    android:textSize="13sp"/>
+                <TextView
+                    android:id="@+id/zfb_transferaccount_preview_payment_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/txt8"
+                    android:textSize="13sp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zdxq_zzsm"
+                    android:textColor="@color/txt_6"
+                    android:textSize="13sp"/>
+                <TextView
+                    android:id="@+id/zfb_transferaccount_preview_des_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/txt8"
+                    android:textSize="13sp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="17dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zdxq_dfzh"
+                    android:textColor="@color/txt_6"
+                    android:textSize="13sp"/>
+                <TextView
+                    android:id="@+id/zfb_transferaccount_preview_account_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/txt8"
+                    android:textSize="13sp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/ashbg"
+                android:layout_marginLeft="10dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="17dp"
+                android:paddingTop="17dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zdxq_cjsj"
+                    android:textColor="@color/txt_6"
+                    android:textSize="13sp"/>
+                <TextView
+                    android:id="@+id/zfb_transferaccount_preview_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/txt8"
+                    android:textSize="13sp"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="17dp">
+
+                <TextView
+                    android:id="@+id/zfb_transferaccount_preview_ddhtag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zdxq_ddh"
+                    android:textColor="@color/txt_6"
+                    android:textSize="13sp"
+                    android:layout_marginRight="33dp"/>
+                <TextView
+                    android:id="@+id/zfb_transferaccount_preview_ddh_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/txt8"
+                    android:textSize="13sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/zfb_transferaccount_preview_ddhtag"
+                    android:lines="2"
+                    android:gravity="end"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="27dp">
+
+                <TextView
+                    android:id="@+id/zfb_transferaccount_preview_shddhtag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zdxq_shddh"
+                    android:textColor="@color/txt_6"
+                    android:textSize="13sp"
+                    android:layout_marginRight="30dp"/>
+                <TextView
+                    android:id="@+id/zfb_transferaccount_preview_shddh_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/txt8"
+                    android:textSize="13sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="0dp"
+                    android:layout_toRightOf="@id/zfb_transferaccount_preview_shddhtag"
+                    android:lines="2"
+                    android:gravity="end"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/zdxq_dcddyyw"
+        android:textColor="#108ee9"
+        android:textSize="13sp"
+        android:layout_marginTop="13dp"/>
+
+
+</LinearLayout>

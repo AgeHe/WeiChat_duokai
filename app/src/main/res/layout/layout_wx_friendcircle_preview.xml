@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/wx_friendcircle_preview_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_title">
+
+        <ImageView
+            android:id="@+id/wx_friendcircle_preview_title_iv"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/abc_ic_ab_back_mtrl_am_alpha"
+            android:paddingLeft="10dp"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/viewbg"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/wx_friendcircle_preview_title_iv"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pyq"
+            android:textColor="@color/color_white"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/wx_friendcircle_preview_title_iv"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/tkphoto"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/wx_friendcircle_preview_bg"
+        android:layout_width="match_parent"
+        android:layout_height="227dp"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:id="@+id/wx_friendcircle_preview_infomation_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@drawable/hui_shape"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/wx_friendcircle_preview_bg"
+        android:minWidth="130dp"
+        android:gravity="center_vertical"
+        android:padding="6dp"
+        android:layout_marginTop="46dp">
+
+        <ImageView
+            android:id="@+id/wx_friendcircle_preview_infomation_iv"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:src="@mipmap/role_000"/>
+
+        <TextView
+            android:id="@+id/wx_friendcircle_preview_infomation_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_white"
+            android:textSize="16sp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="center_vertical"
+            android:lines="1"/>
+
+    </LinearLayout>
+
+    <com.zhushou.weichat.screenshot.view.Newlistview
+        android:id="@+id/wx_friendcircle_preview_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@id/wx_friendcircle_preview_infomation_layout"
+        android:layout_marginTop="42dp" />
+
+        <ImageView
+            android:id="@+id/wx_friendcircle_preview_icon"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/role_000"
+            android:background="@drawable/image_layer"
+            android:padding="1.5dp"
+            android:layout_marginTop="175dp"/>
+
+        <TextView
+            android:id="@+id/wx_friendcircle_preview_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxxx"
+            android:textSize="18sp"
+            android:textColor="@color/color_white"
+            android:layout_alignTop="@id/wx_friendcircle_preview_icon"
+            android:layout_toLeftOf="@id/wx_friendcircle_preview_icon"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

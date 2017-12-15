@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp">
+
+    <com.zhushou.weichat.uinew.widget.BannerView
+        android:id="@+id/bv_bannner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_free_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:background="@color/white"
+        android:elevation="3dp">
+        <ImageView
+            android:id="@+id/iv_free_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/tv_free_remaining_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_normal"
+            android:layout_toRightOf="@id/iv_free_icon"
+            android:layout_marginLeft="9dp"
+            android:textColor="@color/text_dark"
+            android:layout_centerVertical="true"
+            android:text="剩余时间"/>
+        <TextView
+            android:id="@+id/tv_free_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_normal"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="#ff1313"
+            android:text="免费试用"
+            android:background="@drawable/shape_loukong_fillet"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

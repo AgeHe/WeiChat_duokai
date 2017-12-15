@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_title">
+
+        <ImageView
+            android:id="@+id/qq_withdrawable_title_iv"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:src="@mipmap/abc_ic_ab_back_mtrl_am_alpha"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qqzz"
+            android:textColor="@color/color_white"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/color_white"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qqzz_xzlx"
+            android:textColor="@color/color_txtblack"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/qq_withdrawable_from_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qqzz_xzlx_sq"
+            android:textColor="@color/color_white"
+            android:background="@drawable/blue_shape"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/qq_withdrawable_to_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/qqzz_xzlx_zc"
+            android:textColor="@color/wxblue"
+            android:background="@drawable/white_shape"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/ashbg"/>
+
+    <EditText
+        android:id="@+id/qq_withdrawable_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="@string/qqzz_money_hint"
+        android:textSize="18sp"
+        android:background="@color/color_white"
+        android:inputType="number|numberDecimal"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/ashbg"/>
+    <EditText
+        android:id="@+id/qq_withdrawable_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="@string/qqzz_xzlx_nic_hint"
+        android:textSize="18sp"
+        android:background="@color/color_white"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/qq_withdrawable_btn_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/green_shape"
+        android:text="@string/qqzz_xzlx_preview"
+        android:textColor="@color/color_white"/>
+
+</LinearLayout>

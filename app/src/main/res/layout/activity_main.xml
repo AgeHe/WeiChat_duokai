@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_bac">
+
+    <FrameLayout
+        android:id="@+id/m_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorAccent"
+        android:elevation="3dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/fl_friend"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:background="?android:attr/selectableItemBackground"
+                android:visibility="visible">
+
+                <com.zhushou.weichat.ui.view.ImageViewFriendDot
+                    android:id="@+id/iv_friend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="center"
+                    android:src="@mipmap/icon_xs" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/rl_title_adv"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:background="?android:attr/selectableItemBackground"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/tioa_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="center"
+                    android:src="@mipmap/icon_title_adv" />
+                <!--<com.db.ta.sdk.TMAwView-->
+                <!--android:id="@+id/tv_tuia_TMAw1"-->
+                <!--tools:shape="square"-->
+                <!--android:layout_width="?android:actionBarSize"-->
+                <!--android:layout_height="?android:actionBarSize"-->
+                <!--android:visibility="invisible"/>-->
+            </FrameLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_large"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:orientation="horizontal">
+            <!--<TextView-->
+            <!--android:id="@+id/iv_pay_history"-->
+            <!--android:layout_width="?actionBarSize"-->
+            <!--android:layout_height="?actionBarSize"-->
+            <!--android:text="VIP"-->
+            <!--android:visibility="gone"-->
+            <!--android:gravity="center"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="#FFFFDB5A"-->
+            <!--android:textSize="@dimen/text_large"-->
+            <!--android:background="?android:attr/selectableItemBackground" />-->
+
+            <ImageView
+                android:id="@+id/iv_common_problem"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:background="?android:attr/selectableItemBackground"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/share"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_share"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="分享"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_mid" />
+            <!--<ImageView-->
+            <!--android:id="@+id/iv_service"-->
+            <!--android:layout_width="?actionBarSize"-->
+            <!--android:layout_height="?actionBarSize"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@mipmap/main_service"-->
+            <!--android:background="?android:attr/selectableItemBackground"-->
+            <!--/>-->
+            <TextView
+                android:id="@+id/iv_service"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="客服"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_mid" />
+
+            <ImageView
+                android:id="@+id/iv_actionbar_add_weichat"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:background="?android:attr/selectableItemBackground"
+                android:scaleType="center"
+                android:src="@mipmap/ic_actionbar_add"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/pb_loading_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分身加载中..."
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_mid" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_network_request_failure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_rotate" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:autoLink="all"
+            android:text="点击重新加载 !"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/text_mid" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_scrolltext"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@id/m_toolbar"
+        android:paddingLeft="5dp"
+        android:background="#1a000000">
+        <TextView
+            android:id="@+id/tv_close_scrollText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/text_dark_grey"
+            android:text="关闭"
+            android:textSize="12sp"
+            android:padding="4dp"/>
+        <com.zhushou.weichat.ui.view.MarqueeView
+            android:id="@+id/tv_scrolltext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:textSize="@dimen/text_normal"
+            android:maxLines="1"
+            app:mvDirection="right_to_left"
+            app:mvGravity="left"
+            app:mvTextColor="@color/red"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/tv_close_scrollText" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_scrolltext">
+
+        <com.zhushou.weichat.ui.view.PagerView
+            android:id="@+id/pv_installApps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="?android:actionBarSize"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="?android:actionBarSize"
+            android:visibility="gone" />
+    </FrameLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add_weichat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="52dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/ic_add"
+        android:visibility="gone"
+        app:pressedTranslationZ="10dp"
+        app:rippleColor="#11b978" />
+
+    <com.zhushou.weichat.ui.view.MyHiddenTextView
+        android:id="@+id/tv_hidden_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?android:actionBarSize"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="分身列表"
+        android:visibility="gone" />
+
+    <include layout="@layout/layout_main_vip" />
+
+    <TextView
+        android:id="@+id/tv_yindao_create"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_below="@id/m_toolbar"
+        android:layout_marginTop="85dp"
+        android:visibility="visible" />
+
+    <com.zhushou.weichat.ui.view.GifView
+        android:id="@+id/gif_reward"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:enabled="false"
+        android:visibility="gone" />
+</RelativeLayout>

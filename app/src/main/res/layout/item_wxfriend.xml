@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="15dp"
+        >
+        <com.zhushou.weichat.ui.view.RoundImage
+            android:id="@+id/rimage_head"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"/>
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/rimage_head"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_master_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小苑"
+                android:textColor="#607d8b"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_master_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:paddingBottom="12dp"
+                android:ellipsize="end"
+                android:maxLines="5" />
+            <TextView
+                android:id="@+id/tv_txt_stretch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:textSize="@dimen/text_normal"
+                android:textColor="#4d7ba6"
+                android:text="全部"
+                android:visibility="gone"/>
+
+            <com.zhushou.weichat.ui.view.WsFriendViewGroup
+                android:id="@+id/v_photos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--ic_vedio_player-->
+            <RelativeLayout
+                android:id="@+id/ll_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/evp_player"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@mipmap/ws_friends_video_bg"
+                    android:scaleType="centerCrop"
+                    android:clickable="false"/>
+                <ImageView
+                    android:id="@+id/iv_video_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ws_friends_video_play"
+                    android:scaleType="center"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <com.zhushou.weichat.ui.view.ClickAnimationTextView
+                        android:id="@+id/cat_dianzan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="13dp"
+                        android:paddingBottom="13dp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textSize="@dimen/text_small"
+                        android:textColor="#a3a3a3"
+                        android:drawablePadding="5dp"
+                        android:drawableLeft="@mipmap/ic_friend_dianzan"
+                        />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_c_pinglun"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="#a3a3a3"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@mipmap/ic_friend_pinglun"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    android:id="@+id/tv_oldtime"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text_small"
+                    android:textColor="#848484"
+                    android:text=".分钟前"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_pinglun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="1dp"
+            android:layout_below="@id/ll_content"
+            android:layout_toRightOf="@id/rimage_head"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#e6e6e6"/>
+</LinearLayout>

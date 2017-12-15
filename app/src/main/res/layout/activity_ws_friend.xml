@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/m_toolbar"
+        style="@style/ToolBar"
+        android:elevation="3dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_large"
+            android:text="动态"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:scaleType="center"
+            android:layout_gravity="right"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@mipmap/back"
+            />
+    </android.support.v7.widget.Toolbar>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_input"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:background="@color/text_white"
+            android:elevation="4dp"
+            android:visibility="gone">
+            <EditText
+                android:id="@+id/et_input"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="?actionBarSize"
+                android:maxLines="1"
+                android:textColor="@color/text_black"/>
+            <TextView
+                android:id="@+id/tv_input_send"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:background="?android:selectableItemBackground"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/text_dark"
+                android:text="发送"/>
+        </LinearLayout>
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srl_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_floatingAb"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+</LinearLayout>

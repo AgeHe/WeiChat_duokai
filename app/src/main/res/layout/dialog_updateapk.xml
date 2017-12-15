@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_yj"
+    >
+
+        <TextView
+            android:id="@+id/tv_update_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color"
+            android:text="@string/update_title"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"/>
+       <TextView
+           android:id="@+id/dialog_content"
+           android:layout_height="wrap_content"
+           android:layout_width="match_parent"
+           android:padding="10dp"
+           android:textColor="@color/text_dark"
+           android:text="新版1.0.8已更新,是否下载升级？"
+           android:gravity="center"
+           android:textSize="16sp"
+           android:layout_margin="30dp"/>
+    <RelativeLayout
+        android:id="@+id/rl_download"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_margin="30dp"
+        android:visibility="gone">
+        <ProgressBar
+            android:id="@+id/pb_progressbar"
+            style="@style/InitProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+        <TextView
+            android:id="@+id/tv_progressbar_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/text_white"
+            android:layout_centerInParent="true"
+            android:text="0%"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_update_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+        <TextView
+            android:id="@+id/dialog_later"
+            android:layout_height="35dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/later"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/dialog_close_btn_bac"
+            />
+        <TextView
+            android:id="@+id/dialog_download"
+            android:layout_height="35dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/download"
+            android:textColor="@color/text_white"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/main_make_button_shape"
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

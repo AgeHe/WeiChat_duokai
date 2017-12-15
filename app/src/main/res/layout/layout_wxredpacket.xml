@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/txtash">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/color_title">
+
+        <ImageView
+            android:id="@+id/wxredpacket_titile"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/abc_ic_ab_back_mtrl_am_alpha"
+            android:paddingLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wxhb"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/wxredpacket_titile"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/redpacket_name_iv_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wxhb_fsr"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:id="@+id/redpacket_name_iv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/redpacket_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wxql_qxz"
+            android:textSize="15sp"
+            android:textColor="@color/color_black"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/redpacket_name_iv"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/redpacket_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:textColor="@color/color_black"
+        android:layout_marginTop="10dp"
+        android:focusableInTouchMode="false"
+        android:hint="@string/wxhb_money_hint"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/txtash"
+        android:inputType="number|numberDecimal"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/txtash"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/redpacket_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:textColor="@color/color_black"
+        android:focusableInTouchMode="false"
+        android:hint="@string/wxhb_gxcf"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/txtash"/>
+
+    <Button
+        android:id="@+id/redpacket_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green_shape"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/wxhb_preview"
+        android:textSize="18sp"
+        android:textColor="@color/color_white"/>
+
+
+
+</LinearLayout>

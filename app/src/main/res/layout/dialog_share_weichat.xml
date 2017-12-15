@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/text_white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_mid"
+            android:textColor="@color/text_dark"
+            android:padding="15dp"
+            android:text="分享到"/>
+        <ImageView
+            android:id="@+id/iv_btn_cancel"
+            android:layout_width="?android:actionBarSize"
+            android:layout_height="?android:actionBarSize"
+            android:layout_gravity="right"
+            android:scaleType="center"
+            android:src="@mipmap/dialog_close"
+            android:background="?android:selectableItemBackground"/>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/iv_wc_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@mipmap/share_weichat1"
+            android:text="好友"
+            android:textSize="@dimen/text_small"
+            android:drawablePadding="5dp"
+            android:textColor="@color/text_color"
+            />
+
+        <TextView
+            android:id="@+id/iv_wc_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@mipmap/share_weichat2"
+            android:text="朋友圈"
+            android:textSize="@dimen/text_small"
+            android:drawablePadding="5dp"
+            android:textColor="@color/text_color"
+            />
+        <TextView
+            android:id="@+id/iv_wc_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@mipmap/share_weichat3"
+            android:text="收藏"
+            android:textSize="@dimen/text_small"
+            android:drawablePadding="5dp"
+            android:textColor="@color/text_color"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/btn_oval_bk"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_hits_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/text_normal"
+        android:text="@string/share_wc_hint"
+        android:textColor="@color/theme_red"
+        android:layout_marginTop="5dp"/>
+
+    <FrameLayout
+        android:id="@+id/rl_share_adv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"/>
+    <!--<Button-->
+        <!--android:id="@+id/btn_cancel"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/shape_dialog_wc"-->
+        <!--android:layout_marginLeft="25dp"-->
+        <!--android:layout_marginRight="25dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:text="取消"-->
+        <!--android:padding="10dp"-->
+        <!--android:textSize="@dimen/text_mid"-->
+        <!--android:textColor="@color/text_dark"-->
+        <!--/>-->
+</LinearLayout>

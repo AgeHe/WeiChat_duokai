@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <LinearLayout
+        android:id="@+id/dialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_circles_white_bac"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:gravity="center_vertical"
+            android:text="请选择购买类型"
+            android:textColor="#696969"
+            android:textSize="15dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dedede"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_function_type1"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:background="@color/text_white">
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_function_1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toRightOf="@id/tv_price_1"-->
+                <!--android:textSize="14dp"-->
+                <!--android:textColor="#2a2a2a"/>-->
+            <RadioButton
+                android:id="@+id/rb_function_1"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_new_paytype"
+                android:button="@null"/>
+            <TextView
+                android:id="@+id/tv_price_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/rb_function_1"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textSize="14dp"
+                android:textColor="#ff0024"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dedede"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_function_type2"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:background="@color/text_white">
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_function_2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toRightOf="@id/tv_price_2"-->
+                <!--android:textSize="14dp"-->
+                <!--android:textColor="#2a2a2a"/>-->
+            <RadioButton
+                android:id="@+id/rb_function_2"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_new_paytype"
+                android:button="@null"/>
+            <TextView
+                android:id="@+id/tv_price_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/rb_function_2"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textSize="14dp"
+                android:textColor="#ff0024"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dedede"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_function_type3"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:background="@color/text_white">
+
+            <RadioButton
+                android:id="@+id/rb_function_3"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_new_paytype"
+                android:button="@null"/>
+
+            <TextView
+                android:id="@+id/tv_price_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/rb_function_3"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textSize="14dp"
+                android:textColor="#ff0024"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+            <!--<TextView-->
+                <!--android:id="@+id/tv_function_3"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toRightOf="@id/tv_price_3"-->
+                <!--android:textSize="14dp"-->
+                <!--android:textColor="#2a2a2a"/>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#eeeeee"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="#fafafa"
+            android:gravity="center_vertical"
+            android:paddingLeft="13dp"
+            android:text="请选择支付方式"
+            android:textColor="#696969"
+            android:textSize="15dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dedede"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_paytype3"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="@color/text_white"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <ImageView
+                android:id="@+id/iv_qq_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@mipmap/ic_newpay_qq" />
+
+            <TextView
+                android:id="@+id/tv_qq_zk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"
+                android:layout_toRightOf="@id/iv_qq_icon"
+                android:text="QQ支付"
+                android:textColor="#2a2a2a"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rb_qq"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_new_paytype"
+                android:button="@null" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dedede" />
+
+        <RelativeLayout
+            android:id="@+id/rl_paytype1"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="@color/text_white"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <ImageView
+                android:id="@+id/iv_zfb_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@mipmap/ic_newpay_zfb"/>
+
+            <TextView
+                android:id="@+id/tv_zfb_zk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_zfb_icon"
+                android:textColor="#2a2a2a"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/rb_zfb"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@null"
+                android:background="@drawable/selector_new_paytype"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dedede"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_paytype2"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="@color/text_white"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <ImageView
+                android:id="@+id/iv_wx_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@mipmap/ic_newpay_wx"/>
+
+            <TextView
+                android:id="@+id/tv_wx_zk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_wx_icon"
+                android:textColor="#2a2a2a"
+                android:textSize="15sp"
+                android:text="微信支付"/>
+
+            <RadioButton
+                android:id="@+id/rb_wx"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:button="@null"
+                android:background="@drawable/selector_new_paytype"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dedede"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_go_pay"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:background="@drawable/shape_button_bac"
+            android:textSize="@dimen/text_mid"
+            android:textColor="@color/text_white"
+            android:text="确定"/>
+    </LinearLayout>
+</RelativeLayout>
